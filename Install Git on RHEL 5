@@ -1,0 +1,24 @@
+Download Git installation file
+---------------------------------
+
+$ wget http://git-core.googlecode.com/files/git-1.8.3.4.tar.gz
+$ wget -O git-manpages-1.8.3.4.tar.gz http://code.google.com/p/git-core/downloads/detail?name=git-manpages-1.8.3.4.tar.gz&can=2&q=
+
+---------------------------------
+Get all the required libraries 
+---------------------------------
+sudo yum install zlib-devel perl-CPAN gettext
+
+----------------------------------------------
+tar , build and install GIT in /usr directory
+----------------------------------------------
+
+$ tar xvfz git-1.8.3.4.tar.gz
+$ cd git-1.8.3.4
+$ ./configure
+$ make
+$ sudo make prefix=/usr install
+$ git --version
+git version 1.8.3.4
+
+
